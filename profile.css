@@ -1,0 +1,101 @@
+body {
+    margin: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+#header {
+    background-color: rgb(68, 182, 235);
+}
+a:visited{
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+#pic{
+    border-radius: 50%;
+    margin-left: 11%;
+    height: 175px;
+    width: 160px
+}   
+#name {
+    margin-left: 30%;
+    margin-top: 3%;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+*{
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 736px;
+    width: 33.33%
+}
+.column1 {
+    padding: 10px;
+    height: 736px;
+    padding: 10px;
+    width: 33%
+}
+
+
+#colorColumn{
+    background-color: rgb(68, 182, 235);
+    border: 1px solid aliceblue;
+    color:aliceblue;
+}
+
+#otherColumn{
+    border: 1px dotted rgb(68, 182, 235);
+    background-color: aliceblue;
+}
+.row{
+    display: flex;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2{
+    text-align: center;
+    border-bottom: 3px dotted aliceblue
+}
+
+@keyframes roundandround {
+    to {
+      transform:rotateX(360deg);
+      transition: steps()
+    }
+  }
+  
+@keyframes show {
+    to {
+      opacity: 1;
+    }
+}
+}
+.wrapper {
+    transform: rotateX(45deg);
+    transform-style: preserve-3d;
+}
+
+.ball:hover{
+    list-style: none;
+    transform-style:  preserve-3d;
+    animation: roundandround 2s 1s infinite linear;
+}
+
+.ball .ring {
+    border-style: none;
+    border-radius: 50%;
+    opacity: 0;
+    animation: show 0.75s forwards ease-in-out;
+}
+
+#images{
+    height:180px;
+}
